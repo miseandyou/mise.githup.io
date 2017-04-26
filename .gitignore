@@ -1,0 +1,5 @@
+.htaccess
+.idea/*
+wp-content/themes/ParallaxOne/*
+wp-content/uploads/*
+wp-config.php
