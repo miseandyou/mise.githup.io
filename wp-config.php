@@ -29,10 +29,10 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'root');
 
 /** MySQL主机 */
-define('DB_HOST', 'mysql');
+define('DB_HOST', '127.0.0.1:3306');
 
 /** 创建数据表时默认的文字编码 */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** 数据库整理类型。如不确定请勿更改 */
 define('DB_COLLATE', '');
@@ -47,14 +47,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'NmtIF`P2d}&sAuHT{/C?iBfwLw4+Q{N{pT;v$gJPQf{`/YZ05ofsrWY>:#Hn{x..');
+define('SECURE_AUTH_KEY',  'e/9G?)d0KKP>D`;_?hVrh2@I)1g?*u@BF(OW+z1R`u7rU7,Wx4%A6aspWx]&Y?>n');
+define('LOGGED_IN_KEY',    'P6{4_lO9mUpWg(Hi`ydzE6+gxmC*llZYn`r:R=yt;NkGP<xU&Qo I@;_eY)U,}7G');
+define('NONCE_KEY',        'D</j<D?<T[}A+?Qud0N*  0|d|~97PY!bak {5B[E?U(QZ:eeah,E?cnP)+r<rsH');
+define('AUTH_SALT',        '_)LONP-jcB22Q5$y,o$b@x:Qd?sLB1xgsBk@e_8RS:nH7fNeDUk1|DM3AlSqQzjF');
+define('SECURE_AUTH_SALT', 'z{Y,2F{Vw]6Diy(jFugBygtzf,YSECbHB=/&_2n!chdX`7kNO-&#wb*O)(?zvy!?');
+define('LOGGED_IN_SALT',   'T&Oo$&m)k>tj~liqVIF1W[HbLJ~wUB{q&jZLbmqpD42T/$(0|FQlB)?oh2r`7?,<');
+define('NONCE_SALT',       'X^i^Gz)W0sKQ4l7f{]m>p^G}0R1P,UnQ!xt<9F-vB)6[^RfKYTW/gv!9600Q~p-;');
 
 /**#@-*/
 

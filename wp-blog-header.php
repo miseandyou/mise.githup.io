@@ -11,11 +11,13 @@ if ( !isset($wp_did_header) ) {
 
 	// Load the WordPress library.
 	require_once( dirname(__FILE__) . '/wp-load.php' );
+	//var_dump( dirname(__FILE__) . '/wp-load.php' );
 
 	// Set up the WordPress query.
 	wp();
 
 	// Load the theme template.
 	require_once( ABSPATH . WPINC . '/template-loader.php' );
+	//var_dump( ABSPATH . WPINC . '/template-loader.php' );
 
 }
