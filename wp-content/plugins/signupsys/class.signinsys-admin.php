@@ -5,6 +5,10 @@
  * Date: 17-5-1
  * Time: 下午4:40
  */
+add_action('wp_ajax_nopriv_signupsys-alipay', 'signupsys_alipay');
+function signupsys_alipay(){
+    file_put_contents(time()."_alipay_call_back.log",var_export($_POST));
+}
 add_action('wp_ajax_signupsys-edit', 'signupsys_edit');
 function signupsys_edit()
 {
