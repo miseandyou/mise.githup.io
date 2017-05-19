@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="file3css.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_template_directory_uri(); ?>/file3css.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="all">
 <div id="head" style="height: 155px">
         <div id="header">
             <div id="headerl">
-                <img src="image/file1.image/LOGO鲜花隧道.jpg" style="height: 100px;width: 200px">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/LOGO鲜花隧道.jpg" style="height: 100px;width: 200px">
             </div>
             <div id="header2">
                 <ul id="menu">
@@ -27,14 +27,14 @@
     </div>
 <div id="main">
     <div id="main-top">
-        <span  ><a href="#">首页</a> <img src="image/file1.image/arrow.jpg" style="height: 15px;width: 15px">
-        <a href="#">我要报名</a> <img src="image/file1.image/arrow.jpg" style="height: 15px;width: 15px"> <a href="#">天目7尖越野赛中巴及住宿预定通道</a>
+        <span  ><a href="#">首页</a> <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/arrow.jpg" style="height: 15px;width: 15px">
+        <a href="#">我要报名</a> <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/arrow.jpg" style="height: 15px;width: 15px"> <a href="#">天目7尖越野赛中巴及住宿预定通道</a>
         </span>
         <div style="height: 40px" ></div>
         <h1>天目7尖越野赛中巴及住宿预定通道</h1>
         <hr>
         <div id="news" style="height: 380px">
-            <div id="news-left"><img src="image/file1.image/time.jpg" style="height: 240px;width: 450px"></div>
+            <div id="news-left"><img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/time.jpg" style="height: 240px;width: 450px"></div>
             <div id="news-right">
                 <div class="tb">
                     <table style="width: 100%">
@@ -71,8 +71,8 @@
                 </div>
             </div>
             <div id="pic" >
-                <img src="image/file1.image/time.jpg" style="width: 90px;height: 65px">
-                <img src="image/file1.image/map.jpg" style="width: 90px;height: 65px;padding-left: 20px">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/time.jpg" style="width: 90px;height: 65px">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/map.jpg" style="width: 90px;height: 65px;padding-left: 20px">
             </div>
         </div><!--news结束-->
         <div id="tips">
@@ -105,19 +105,19 @@
             <div class="detail-below">
                 <div style="width: 80%;height: 350px;"><p>   如预定人数不足10人，我们可能会采用小车接送，往返交通请服从安排</p>
                 </div>
-                <img src="image/file1.image/map.jpg" style="width: 80%;height: 250px">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/map.jpg" style="width: 80%;height: 250px">
             </div>
         </div>
         <div id="recommend">
             <div id="recommend-text"><h2>相关推荐</h2></div>
             <div id="recommend-pic">
                 <div id="rcm-left">
-                  <img src="image/file1.image/time.jpg" style="height: 170px;width: 230px">
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/time.jpg" style="height: 170px;width: 230px">
                     <h6 style="margin-top: 10px;margin-bottom: 0px">天目7尖越野赛中巴及住宿预定通道</h6>
                     <p>¥130</p>
                 </div>
                 <div id="rcm-right">
-                    <img src="image/file1.image/map.jpg" style="height: 170px;width: 230px">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/file1.image/map.jpg" style="height: 170px;width: 230px">
                     <h6 style="margin-top: 10px;margin-bottom: 0px">第四界天目7尖越野赛</h6>
                     <p>¥130</p>
                 </div>
