@@ -33,7 +33,7 @@ if ( !is_multisite() ) {
 }
 
 if ( !is_main_site() ) {
-	wp_redirect( network_site_url( 'wp-signup.php' ) );
+	wp_redirect( network_site_url( 'wp-content-signup.php' ) );
 	die();
 }
 
@@ -537,7 +537,7 @@ function signup_user( $user_name = '', $user_email = '', $errors = '' ) {
 	<form id="setupform" method="post" action="wp-signup.php" novalidate="novalidate">
 		<input type="hidden" name="stage" value="validate-user-signup" />
 		<?php
-		/** This action is documented in wp-signup.php */
+		/** This action is documented in wp-content-signup.php */
 		do_action( 'signup_hidden_fields', 'validate-user' );
 		?>
 		<?php show_user_form($user_name, $user_email, $errors); ?>
@@ -584,7 +584,7 @@ function validate_user_signup() {
 		return false;
 	}
 
-	/** This filter is documented in wp-signup.php */
+	/** This filter is documented in wp-content-signup.php */
 	wpmu_signup_user( $user_name, $user_email, apply_filters( 'add_signup_meta', array() ) );
 
 	confirm_user_signup($user_name, $user_email);
@@ -608,7 +608,7 @@ function confirm_user_signup($user_name, $user_email) {
 	printf( __( 'Check your inbox at %s and click the link given.' ), '<strong>' . $user_email . '</strong>' ); ?></p>
 	<p><?php _e( 'If you do not activate your username within two days, you will have to sign up again.' ); ?></p>
 	<?php
-	/** This action is documented in wp-signup.php */
+	/** This action is documented in wp-content-signup.php */
 	do_action( 'signup_finished' );
 }
 
@@ -666,7 +666,7 @@ function signup_blog($user_name = '', $user_email = '', $blogname = '', $blog_ti
 		<input type="hidden" name="user_name" value="<?php echo esc_attr($user_name) ?>" />
 		<input type="hidden" name="user_email" value="<?php echo esc_attr($user_email) ?>" />
 		<?php
-		/** This action is documented in wp-signup.php */
+		/** This action is documented in wp-content-signup.php */
 		do_action( 'signup_hidden_fields', 'validate-site' );
 		?>
 		<?php show_blog_form($blogname, $blog_title, $errors); ?>
@@ -724,7 +724,7 @@ function validate_blog_signup() {
 
 	}
 
-	/** This filter is documented in wp-signup.php */
+	/** This filter is documented in wp-content-signup.php */
 	$meta = apply_filters( 'add_signup_meta', $signup_meta );
 
 	wpmu_signup_blog($domain, $path, $blog_title, $user_name, $user_email, $meta);
@@ -766,7 +766,7 @@ function confirm_blog_signup( $domain, $path, $blog_title, $user_name = '', $use
 		</ul>
 	</p>
 	<?php
-	/** This action is documented in wp-signup.php */
+	/** This action is documented in wp-content-signup.php */
 	do_action( 'signup_finished' );
 }
 
@@ -833,7 +833,7 @@ $current_user = wp_get_current_user();
 if ( $active_signup == 'none' ) {
 	_e( 'Registration has been disabled.' );
 } elseif ( $active_signup == 'blog' && !is_user_logged_in() ) {
-	$login_url = wp_login_url( network_site_url( 'wp-signup.php' ) );
+	$login_url = wp_login_url( network_site_url( 'wp-content-signup.php' ) );
 	/* translators: %s: login URL */
 	printf( __( 'You must first <a href="%s">log in</a>, and then you can create a new site.' ), $login_url );
 } else {

@@ -35,6 +35,7 @@ function signinsys_install(){
         time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
         name text DEFAULT '' NOT NULL,
         uid int NOT NULL,
+        sex int NOT NULL,
         payid bigint NOT NULL,
         alipay int NOT NULL,
         phone bigint NOT NULL,
